@@ -59,7 +59,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- INTRO SCREEN (الافتتاحية لمدة 3 ثواني مع زر تخطي) -->
+    <!-- INTRO SCREEN -->
     <div id="intro-screen">
         <div class="relative w-full max-w-xl text-center space-y-4 p-4">
             <div class="glow-gold-pulse inline-block p-4">
@@ -78,19 +78,20 @@
         </div>
     </div>
 
-    <!-- NAVBAR -->
-    <header class="fixed top-0 w-full z-50 glass-gold border-b border-goldBase/20">
-        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <!-- NAVBAR (الشريط العلوي المحدث بخطوط أكبر وأوضح) -->
+    <header class="fixed top-0 w-full z-50 glass-gold border-b border-goldBase/20 py-1">
+        <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
             <a href="#home" class="flex items-center gap-3">
-                <img src="https://i.ibb.co/kV5DHFMp/logo-png.png" alt="الفخامة" class="h-10 sm:h-12 w-auto object-contain shrink-0">
+                <img src="https://i.ibb.co/kV5DHFMp/logo-png.png" alt="الفخامة" class="h-12 sm:h-16 w-auto object-contain shrink-0">
                 <div class="text-right">
-                    <span class="text-[9px] sm:text-[10px] text-gray-300 block font-bold leading-tight">الجمعية التعاونية للإنشاءات المتكاملة</span>
-                    <span class="text-lg sm:text-xl font-black text-gold-gradient block leading-none tracking-wider my-0.5">الفَخَامَة</span>
-                    <span class="text-[8px] sm:text-[9px] text-gray-400 block font-light leading-tight">للتشييد والبناء والتوريدات العمومية</span>
+                    <span class="text-[10px] sm:text-xs text-gray-300 block font-bold leading-tight">الجمعية التعاونية للإنشاءات المتكاملة</span>
+                    <span class="text-2xl sm:text-3xl font-black text-gold-gradient block leading-none tracking-wider my-1">الفَخَامَة</span>
+                    <span class="text-[9px] sm:text-[10px] text-gray-400 block font-medium leading-tight">للتشييد والبناء والتوريدات العمومية</span>
                 </div>
             </a>
 
-            <nav class="hidden lg:flex gap-8 text-sm font-medium text-gray-300">
+            <!-- روابط القائمة بخط أكبر وأوضح -->
+            <nav class="hidden lg:flex gap-7 text-base font-bold text-gray-200">
                 <a href="#about" class="hover:text-goldBase transition">عن الجمعية</a>
                 <a href="#why-us" class="hover:text-goldBase transition">لماذا الفخامة</a>
                 <a href="#tenders" class="hover:text-goldBase transition">المناقصات</a>
@@ -101,29 +102,29 @@
             </nav>
 
             <div class="hidden lg:flex items-center gap-4">
-                <a href="https://wa.me/201010077449" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-goldBase via-amber-400 to-amber-600 text-black font-extrabold text-xs hover:brightness-110 transition shadow-lg shadow-goldBase/20 flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-sm"></i> تواصل عبر واتساب
+                <a href="https://wa.me/201010077449" target="_blank" class="px-6 py-3 rounded-full bg-gradient-to-r from-goldBase via-amber-400 to-amber-600 text-black font-black text-sm hover:brightness-110 transition shadow-lg shadow-goldBase/20 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i> واتساب
                 </a>
             </div>
 
-            <button id="menu-btn" class="lg:hidden text-goldBase text-2xl">
+            <button id="menu-btn" class="lg:hidden text-goldBase text-3xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-black/95 px-6 py-6 flex flex-col gap-4 border-t border-goldBase/20 text-sm">
-            <a href="#about" class="text-gray-300 hover:text-goldBase">عن الجمعية</a>
-            <a href="#why-us" class="text-gray-300 hover:text-goldBase">لماذا الفخامة</a>
-            <a href="#tenders" class="text-gray-300 hover:text-goldBase">المناقصات</a>
-            <a href="#services" class="text-gray-300 hover:text-goldBase">قطاعات المقاولات</a>
-            <a href="#decor" class="text-gray-300 hover:text-goldBase">التشطيبات والديكور</a>
-            <a href="#installment" class="text-gray-300 hover:text-goldBase">أنظمة التقسيط</a>
-            <a href="#contact" class="text-gray-300 hover:text-goldBase">بيانات التواصل</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-black/95 px-6 py-6 flex flex-col gap-4 border-t border-goldBase/20 text-base font-bold">
+            <a href="#about" class="text-gray-200 hover:text-goldBase">عن الجمعية</a>
+            <a href="#why-us" class="text-gray-200 hover:text-goldBase">لماذا الفخامة</a>
+            <a href="#tenders" class="text-gray-200 hover:text-goldBase">المناقصات</a>
+            <a href="#services" class="text-gray-200 hover:text-goldBase">قطاعات المقاولات</a>
+            <a href="#decor" class="text-gray-200 hover:text-goldBase">التشطيبات والديكور</a>
+            <a href="#installment" class="text-gray-200 hover:text-goldBase">أنظمة التقسيط</a>
+            <a href="#contact" class="text-gray-200 hover:text-goldBase">بيانات التواصل</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section id="home" class="hero-bg min-h-screen flex items-center pt-28 pb-16 px-6">
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-32 pb-16 px-6">
         <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <div class="inline-flex items-center gap-2 text-xs font-bold text-goldBase bg-goldBase/10 px-4 py-2 rounded-full border border-goldBase/30">
@@ -389,7 +390,7 @@
                     <div class="flex items-start gap-4">
                         <div class="w-10 h-10 rounded-xl bg-goldBase/20 border border-goldBase/40 flex items-center justify-center text-goldBase text-lg shrink-0"><i class="fa-solid fa-envelope"></i></div>
                         <div>
-                            <h4 class="text-xs font-bold text-white">البريد الإلكتروني الرسمي</h4>
+                            <h4 class="text-xs font-bold text-white">البريد الإلكتروني الرسمى</h4>
                             <p class="text-sm text-gray-300 mt-1 font-mono">mkmk204@yahoo.com</p>
                         </div>
                     </div>
@@ -431,7 +432,6 @@
             }
         }
 
-        // تحديد وقت ظهور الافتتاحية بـ 3 ثواني (3000 ملي ثانية) وتختفي تلقائياً
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 enterWebsite();
